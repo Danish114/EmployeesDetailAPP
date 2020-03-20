@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+    <RelativeLayout
+        android:id="@+id/tolbartop"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tVNme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:layout_centerHorizontal="true"
+            android:text="Employe" />
+    </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/tolbartop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/id_RecycleView"
+            android:scrollbars="vertical">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</layout>
